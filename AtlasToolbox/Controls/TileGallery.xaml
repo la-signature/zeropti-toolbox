@@ -138,12 +138,12 @@
                         x:Name="DocumentationTile"            
                         Link="https://atlasos.net/docs/">
                         <local:HeaderTile.Source>
-                            <Image Source="..\assets\logo\atlas-logo.png" />
+                            <FontIcon FontSize="40" Glyph="&#xE736;" Foreground="{ThemeResource TextFillColorPrimaryBrush}" />
                         </local:HeaderTile.Source>
                     </local:HeaderTile>
                     <local:HeaderTile
                         x:Name="GithubTile"
-                        Link="https://github.com/Atlas-OS/">
+                        Link="https://github.com/la-signature/zeropti-os">
                         <local:HeaderTile.Source>
                             <PathIcon Data="{StaticResource GitHubIconPath}" Foreground="{ThemeResource TextFillColorPrimaryBrush}">
                                 <PathIcon.RenderTransform>
@@ -157,16 +157,9 @@
                     </local:HeaderTile>
                     <local:HeaderTile
                         x:Name="DiscordTile"
-                        Link="https://discord.com/invite/atlasos">
+                        Link="https://discord.gg/MzxwsmqER">
                         <local:HeaderTile.Source>
                             <Image Source="..\assets\logo\discord-mark-blue.png" />
-                        </local:HeaderTile.Source>
-                    </local:HeaderTile>
-                    <local:HeaderTile
-                        x:Name="KofiTile"
-                        Link="https://ko-fi.com/atlasos">
-                        <local:HeaderTile.Source>
-                            <Image Source="..\assets\logo\kofi_symbol.png" />
                         </local:HeaderTile.Source>
                     </local:HeaderTile>
                 </StackPanel>

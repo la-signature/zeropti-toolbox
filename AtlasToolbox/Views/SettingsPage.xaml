@@ -92,7 +92,7 @@
                 <StackPanel>
                     <TextBlock x:Name="AboutHeader" Style="{StaticResource CategoryTitle}" />
                     <!--  About Section  -->
-                    <controls:SettingsExpander Header="AtlasOS Toolbox" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
+                    <controls:SettingsExpander Header="Zeropti Toolbox" Style="{StaticResource ConfigurationSettingsExpanderTemplate}">
                         <controls:SettingsExpander.HeaderIcon>
                             <BitmapIcon ShowAsMonochrome="False" UriSource="/assets/logo/toolbox-icon.ico" />
                         </controls:SettingsExpander.HeaderIcon>
@@ -110,7 +110,7 @@
                                     FontFamily="Consolas"
                                     Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                     IsTextSelectionEnabled="True"
-                                    Text="git clone https://github.com/Atlas-OS/atlas-toolbox" />
+                                    Text="git clone https://github.com/la-signature/zeropti-toolbox" />
                                 <controls:SettingsCard.ActionIcon>
                                     <FontIcon Glyph="&#xE8C8;" />
                                 </controls:SettingsCard.ActionIcon>
@@ -137,6 +137,7 @@
                                 HorizontalContentAlignment="Left"
                                 ContentAlignment="Vertical">
                                 <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
+                                    <HyperlinkButton Content="Zeropti OS GitHub" NavigateUri="https://github.com/la-signature/zeropti-os" />
                                     <HyperlinkButton Content="AtlasOS GitHub" NavigateUri="https://github.com/Atlas-OS/" />
                                     <HyperlinkButton Content="AtlasOS Website" NavigateUri="https://atlasos.net" />
                                 </StackPanel>

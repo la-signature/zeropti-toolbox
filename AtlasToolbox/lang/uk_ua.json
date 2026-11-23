@@ -3,7 +3,7 @@
   "LangKey": "uk_ua",
 
   "ToBeTranslated": "Потребує перекладу",
-  "OpenShellAtlasPreset": "Пресет Open Shell для AtlasOS",
+  "OpenShellAtlasPreset": "Пресет Open Shell для Zeropti OS",
   "InterfaceTweaksDocumentation": "Документація з налаштувань інтерфейсу",
   "ActivationPage": "Сторінка активації",
   "ColorsPage": "Налаштування персоналізації кольорів",
@@ -40,7 +40,7 @@
   "FixErrorsDescription": "Виправити помилки 2502 і 2503",
   "RepairWinComponent": "Відновити компоненти Windows",
   "TelemetryComponents": "Компоненти телеметрії",
-  "AtlasDefault": "Скинути мережу до стандартних налаштувань Atlas",
+  "AtlasDefault": "Скинути мережу до стандартних налаштувань Zeropti OS",
   "WindowsDefault": "Скинути мережу до стандартних налаштувань Windows",
   "BootConfigAppearance": "Вигляд конфігурації завантаження",
   "BootConfigAppearanceDescription": "Усе, що стосується вигляду під час завантаження Windows",
@@ -268,7 +268,7 @@
   "Home_ProfilesText": "Профілі",
   "Home_Favorites": "Обране",
   "NewProfilesButton": "Створити новий профіль",
-  "IncompatibleVer": "Поточна інсталяція AtlasOS/Windows несумісна з цією версією Toolbox. Оновіть AtlasOS до версії ",
+  "IncompatibleVer": "Поточна інсталяція Zeropti OS/Windows несумісна з цією версією Toolbox. Оновіть Zeropti OS до версії ",
   "StatingServices": "Запуск служб...",
 
   // Dialog text
@@ -293,7 +293,7 @@
   "About": "Про програму",
   "CloneRepoCard": "Клонувати цей репозиторій",
   "BugReportCard": "Створити звіт про помилку",
-  "WarningHeader": "Цей код надано командою AtlasOS. Це програмне забезпечення призначене для використання з AtlasOS лише на підтримуваній версії Windows. Використання з будь-яким іншим playbook та/або непідтримуваною версією Windows не рекомендується.",
+  "WarningHeader": "Цей код надано командою AtlasOS. Це програмне забезпечення призначене для використання з Zeropti OS лише на підтримуваній версії Windows. Використання з будь-яким іншим playbook та/або непідтримуваною версією Windows не рекомендується.",
   "InstallSoftware": "Установити програмне забезпечення",
   "InstallButton": "Установити",
   "Unstable": "Нестабільна версія",
@@ -333,12 +333,12 @@
   "Tile_DiscordTitle": "Discord",
   "Tile_DiscordDescription": "Звертайтеся по підтримку та знаходьте друзів!",
   "Tile_GithubTitle": "GitHub",
-  "Tile_GithubDescription": "Досліджуйте код AtlasOS і долучайтеся до розробки",
+  "Tile_GithubDescription": "Досліджуйте код Zeropti OS і долучайтеся до розробки",
   "Tile_KofiTitle": "Підтримайте нас на Ko-Fi",
   "Tile_KofiDescription": "Допоможіть нам продовжувати цей проєкт!",
 
   // Menu Items & other navigation item texts
-  "SearchPlaceholder": "Пошук налаштувань AtlasOS...",
+  "SearchPlaceholder": "Пошук налаштувань Zeropti OS...",
 
   "Home": "Головна",
   "Software": "Програмне забезпечення",

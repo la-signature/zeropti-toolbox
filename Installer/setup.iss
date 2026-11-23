@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 #include "CodeDependencies.iss"
 
-#define MyAppName "Atlas Toolbox"
-#define MyAppVersion "0.2.0"
-#define MyAppPublisher "AtlasOS"
-#define MyAppURL "https://atlasos.net/"
+#define MyAppName "Zeropti Toolbox"
+#define MyAppVersion "0.2.1"
+#define MyAppPublisher "Zeropti (based on AtlasOS Toolbox)"
+#define MyAppURL "https://github.com/la-signature/zeropti-toolbox"
 #define MyAppExeName "AtlasToolbox.exe"
 #define MyAppAssocName MyAppName + ""
 #define MyAppAssocExt ".exe"
@@ -24,7 +24,8 @@ AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 UsePreviousAppDir=no
-DefaultDirName={autopf}\{#MyAppName}
+; Zeropti OS (like AtlasOS) looks for the Toolbox in this folder: keep it.
+DefaultDirName={autopf}\Atlas Toolbox
 UninstallDisplayIcon={app}\{#MyAppExeName}
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
@@ -37,7 +38,7 @@ UninstallLogMode=overwrite
 ;Test
 ;LicenseFile=C:\Users\TheyCreeper\Documents\dev\atlas-toolbox\LICENSE
 ;Prod
-LicenseFile=D:\a\atlas-toolbox\atlas-toolbox\LICENSE
+LicenseFile=..\LICENSE
 
 OutputBaseFilename=AtlasToolbox-Setup
 SolidCompression=yes
@@ -53,7 +54,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 ; Test code
 ;Source: "C:\Users\TheyCreeper\Documents\dev\atlas-toolbox\AtlasToolbox\bin\x64\Release\net8.0-windows10.0.26100.0\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; Prod code
-Source: "D:\a\atlas-toolbox\atlas-toolbox\Deploy\src\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\Deploy\src\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
@@ -63,6 +64,11 @@ Root: HKA; Subkey: "Software\Classes\{#MyAppAssocKey}\shell\open\command"; Value
 Root: HKLM; Subkey: "Software\AtlasOS\Toolbox"; ValueType: string; ValueName: "Channel"; ValueData: "{#AppChannel}"
 Root: HKLM; Subkey: "Software\AtlasOS\Toolbox"; ValueType: string; ValueName: "Version"; ValueData: "{#MyAppVersion}"
 
+
+[InstallDelete]
+; Shortcuts an earlier Atlas Toolbox left behind.
+Type: files; Name: "{autoprograms}\Atlas Toolbox.lnk"
+Type: files; Name: "{autodesktop}\Atlas Toolbox.lnk"
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

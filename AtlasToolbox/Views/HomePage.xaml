@@ -56,7 +56,7 @@
                             <TextBlock
                                 x:Name="subHeaderBlock"
                                 FontSize="18"
-                                Text="AtlasOS Toolbox" />
+                                Text="Zeropti Toolbox" />
                             <TextBlock
                                 x:Name="HomeHeaderText"
                                 FontSize="45"

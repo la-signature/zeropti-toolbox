@@ -4,7 +4,7 @@
 
 
   "ToBeTranslated": "To be translated",
-  "OpenShellAtlasPreset": "Open Shell AtlasOS preset",
+  "OpenShellAtlasPreset": "Open Shell Zeropti OS preset",
   "InterfaceTweaksDocumentation": "Interface tweaks documentation",
   "ActivationPage": "Activation Page",
   "ColorsPage": "Color personalisation settings",
@@ -41,7 +41,7 @@
   "FixErrorsDescription": "Fix Errors 2502 and 2503",
   "RepairWinComponent": "Repair Windows Components",
   "TelemetryComponents": "Telemetry Components",
-  "AtlasDefault": "Reset Network to Atlas Defaults",
+  "AtlasDefault": "Reset Network to Zeropti OS Defaults",
   "WindowsDefault": "Reset Network to Windows Defaults",
   "BootConfigAppearance": "Boot configuration appearance",
   "BootConfigAppearanceDescription": "Everything related to the appearance of booting Windows",
@@ -272,7 +272,7 @@
   "Home_ProfilesText": "Profiles",
   "Home_Favorites": "Favorites",
   "NewProfilesButton": "Create a new profile",
-  "IncompatibleVer": "Current AtlasOS/Windows installation incompatible with this Toolbox version. Please upgrade to AtlasOS ",
+  "IncompatibleVer": "Current Zeropti OS/Windows installation incompatible with this Toolbox version. Please upgrade to Zeropti OS ",
   "StatingServices": "Starting services...",
 
   // Dialog text
@@ -297,7 +297,7 @@
   "About": "About",
   "CloneRepoCard": "Clone this repository",
   "BugReportCard": "Create a bug report",
-  "WarningHeader": "This code is provided by the AtlasOS team. This software is meant to be used with AtlasOS on a supported Windows version ONLY. Any other playbook and/or unsupported Windows version is not advised.",
+  "WarningHeader": "This code is based on the work of the AtlasOS team and modified by Zeropti. This software is meant to be used with Zeropti OS on a supported Windows version ONLY. Any other playbook and/or unsupported Windows version is not advised.",
   "InstallSoftware": "Install Software",
   "InstallButton": "Install",
   "Unstable": "Unstable",
@@ -337,12 +337,12 @@
   "Tile_DiscordTitle": "Discord",
   "Tile_DiscordDescription": "Ask for support and make friends!",
   "Tile_GithubTitle": "GitHub",
-  "Tile_GithubDescription": "Explore AtlasOS' code and contribute",
+  "Tile_GithubDescription": "Explore Zeropti OS' code and contribute",
   "Tile_KofiTitle": "Support us on Ko-Fi",
   "Tile_KofiDescription": "Help us continue this project!",
 
   // Menu Items & other navigation item texts
-  "SearchPlaceholder": "Search AtlasOS settings...",
+  "SearchPlaceholder": "Search Zeropti OS settings...",
 
   "Home": "Home",
   "Software": "Software",
@@ -384,9 +384,9 @@
   "MicrosoftStore": "Toggle Microsoft Store",
   "Continue": "Continue",
   "ToggleWarningTitle": "Before you continue",
-  "ToggleFailedTitle": "Atlas couldn't make this change",
-  "ToggleFailedDesc": "Atlas didn't give a reason. The Toolbox log has the details.",
-  "ToggleUnavailable": "This version of Atlas doesn't have this setting.",
+  "ToggleFailedTitle": "Zeropti OS couldn't make this change",
+  "ToggleFailedDesc": "Zeropti OS didn't give a reason. The Toolbox log has the details.",
+  "ToggleUnavailable": "This version of Zeropti OS doesn't have this setting.",
   "Workplace": "Access work or school page",
   "WorkplaceDescription": "Show or hide Access work or school in Settings",
   "ClickToDo": "Click to Do",

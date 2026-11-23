@@ -20,8 +20,6 @@ namespace AtlasToolbox.Controls
             GithubTile.Description = App.GetValueFromItemList("Tile_GithubDescription");
             DiscordTile.Title = App.GetValueFromItemList("Tile_DiscordTitle");
             DiscordTile.Description = App.GetValueFromItemList("Tile_DiscordDescription");
-            KofiTile.Title = App.GetValueFromItemList("Tile_KofiTitle");
-            KofiTile.Description = App.GetValueFromItemList("Tile_KofiDescription");
         }
 
         private void scroller_ViewChanging(object sender, ScrollViewerViewChangingEventArgs e)

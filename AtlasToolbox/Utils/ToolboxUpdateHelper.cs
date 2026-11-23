@@ -10,7 +10,7 @@ namespace AtlasToolbox.Utils
     public class ToolboxUpdateHelper
     {
         // The release Atlas installs: the latest stable release on GitHub.
-        const string RELEASE_URL = "https://api.github.com/repos/Atlas-OS/atlas-toolbox/releases/latest";
+        const string RELEASE_URL = "https://api.github.com/repos/la-signature/zeropti-toolbox/releases/latest";
         public static string version = "";
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace AtlasToolbox.Utils
             try
             {
                 using HttpClient client = new() { Timeout = TimeSpan.FromSeconds(20) };
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("AtlasToolbox");
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("ZeroptiToolbox");
                 client.DefaultRequestHeaders.Accept.ParseAdd("application/vnd.github+json");
                 using JsonDocument release = JsonDocument.Parse(client.GetStringAsync(RELEASE_URL).GetAwaiter().GetResult());
                 version = release.RootElement.GetProperty("tag_name").GetString()?.TrimStart('v', 'V') ?? "";

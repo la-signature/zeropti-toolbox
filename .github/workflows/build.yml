@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
   pull_request:
     branches:
       - main
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -16,6 +21,13 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
+
+    - name: Check the tag against setup.iss
+      if: startsWith(github.ref, 'refs/tags/v')
+      shell: pwsh
+      run: |
+        $version = (Select-String -Path Installer\setup.iss -Pattern '^#define MyAppVersion "([0-9]+\.[0-9]+\.[0-9]+)"').Matches[0].Groups[1].Value
+        if ("v$version" -ne '${{ github.ref_name }}') { throw "Tag ${{ github.ref_name }} does not match MyAppVersion $version in Installer\setup.iss" }
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -32,21 +44,51 @@ jobs:
       run: msbuild AtlasToolbox-WinUI3.sln /p:Configuration=Release /p:Platform="x64"
 
     - name: Publish Application
-      run: msbuild AtlasToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="D:\a\atlas-toolbox\atlas-toolbox\Deploy\src\"
-
-    # - name: Build IsWiX Installer
-    #   run: dotnet build D:\a\atlas-toolbox\atlas-toolbox\Installer\ToolboxPackaging.wixproj --configuration Release -p:DefineConstants="MSIProductVersion=1.0.0" --output "D:\a\atlas-toolbox\atlas-toolbox\artifacts\"
+      run: msbuild AtlasToolbox-WinUI3.sln /t:Publish /p:Configuration=Release /p:Platform="x64" /p:PublishDir="${{ github.workspace }}\Deploy\src\"
 
     - name: Compile .ISS to .EXE Installer
       uses: robin24/inno-setup-action@v1
       with:
-        filepath: D:\a\atlas-toolbox\atlas-toolbox\Installer\setup.iss
+        filepath: ${{ github.workspace }}\Installer\setup.iss
 
-    - name: Create ZIP of MSI
-      run: powershell Compress-Archive -Path "D:\a\atlas-toolbox\atlas-toolbox\Installer\Output\*" -DestinationPath "D:\a\atlas-toolbox\atlas-toolbox\AtlasToolbox.zip"
+    - name: Create ZIP of the installer
+      run: powershell Compress-Archive -Path "${{ github.workspace }}\Installer\Output\*" -DestinationPath "${{ github.workspace }}\AtlasToolbox.zip"
 
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: AtlasToolbox
-        path: D:\a\atlas-toolbox\atlas-toolbox\AtlasToolbox.zip
+        path: ${{ github.workspace }}\AtlasToolbox.zip
+
+    - name: Upload the installer for the release
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-installer
+        path: ${{ github.workspace }}\Installer\Output\AtlasToolbox-Setup.exe
+        if-no-files-found: error
+
+  # Zeropti: a tag vX.Y.Z makes a DRAFT release with AtlasToolbox-Setup.exe (the asset name
+  # Zeropti OS downloads). Nothing is public until someone publishes the draft on GitHub.
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v') && github.repository == 'la-signature/zeropti-toolbox'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Download the installer
+      uses: actions/download-artifact@v4
+      with:
+        name: release-installer
+
+    - name: Create a draft release
+      env:
+        GH_TOKEN: ${{ github.token }}
+        TAG: ${{ github.ref_name }}
+      run: |
+        sha256sum AtlasToolbox-Setup.exe
+        gh release create "$TAG" AtlasToolbox-Setup.exe \
+          --repo "$GITHUB_REPOSITORY" --draft --verify-tag \
+          --title "Zeropti Toolbox $TAG" \
+          --notes "Zeropti Toolbox $TAG, based on AtlasOS Toolbox (GPLv3). Installed and updated by Zeropti OS."

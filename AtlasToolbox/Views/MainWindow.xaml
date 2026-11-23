@@ -8,7 +8,7 @@
     xmlns:local="using:AtlasToolbox"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="root"
-    Title="AtlasOS Toolbox"
+    Title="Zeropti Toolbox"
     mc:Ignorable="d">
     <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base" />
@@ -49,7 +49,7 @@
                         Margin="12,-1,0,0"
                         VerticalAlignment="Center"
                         Style="{StaticResource CaptionTextBlockStyle}"
-                        Text="AtlasOS Toolbox" />
+                        Text="Zeropti Toolbox" />
                     </StackPanel>
             </TitleBar.LeftHeader>
             <TitleBar.Content>

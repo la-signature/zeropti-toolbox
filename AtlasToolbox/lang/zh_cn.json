@@ -2,7 +2,7 @@
   "LangName": "简体中文 (Chinese Simplified)",
   "LangKey": "zh_cn",
 
-  "OpenShellAtlasPreset": "打开 Shell AtlasOS 预设",
+  "OpenShellAtlasPreset": "打开 Shell Zeropti OS 预设",
   "InterfaceTweaksDocumentation": "界面调整文档",
   "ActivationPage": "激活页面",
   "ColorsPage": "颜色个性化设置",
@@ -39,7 +39,7 @@
   "FixErrorsDescription": "修复错误 2502 和 2503",
   "RepairWinComponent": "修复 Windows 组件",
   "TelemetryComponents": "遥测组件",
-  "AtlasDefault": "将网络重置为 Atlas 默认设置",
+  "AtlasDefault": "将网络重置为 Zeropti OS 默认设置",
   "WindowsDefault": "将网络重置为 Windows 默认设置",
   "BootConfigAppearance": "启动配置外观",
   "BootConfigAppearanceDescription": "与 Windows 启动外观相关的所有内容",
@@ -266,7 +266,7 @@
   "Home_ProfilesText": "配置文件",
   "Home_Favorites": "收藏",
   "NewProfilesButton": "创建新配置文件",
-  "IncompatibleVer": "当前 AtlasOS/Windows 安装与此工具箱版本不兼容。请升级到 AtlasOS ",
+  "IncompatibleVer": "当前 Zeropti OS/Windows 安装与此工具箱版本不兼容。请升级到 Zeropti OS ",
   "StatingServices": "正在启动服务...",
 
   // 对话框文本
@@ -291,7 +291,7 @@
   "About": "关于",
   "CloneRepoCard": "克隆此存储库",
   "BugReportCard": "提交错误报告",
-  "WarningHeader": "此代码由 AtlasOS 团队提供。此软件仅限于在受支持的 Windows 版本上与 AtlasOS 配合使用。不建议使用其他 Playbook 和/或不受支持的 Windows 版本。",
+  "WarningHeader": "此代码由 AtlasOS 团队提供。此软件仅限于在受支持的 Windows 版本上与 Zeropti OS 配合使用。不建议使用其他 Playbook 和/或不受支持的 Windows 版本。",
   "InstallSoftware": "安装软件",
   "InstallButton": "安装",
   "Unstable": "不稳定",
@@ -330,7 +330,7 @@
   "Tile_DiscordTitle": "Discord",
   "Tile_DiscordDescription": "获取支持并交个朋友！",
   "Tile_GithubTitle": "GitHub",
-  "Tile_GithubDescription": "探索 AtlasOS 代码并做出贡献",
+  "Tile_GithubDescription": "探索 Zeropti OS 代码并做出贡献",
   "Tile_KofiTitle": "在 Ko-Fi 上支持我们",
   "Tile_KofiDescription": "帮助我们继续这个项目！",
 

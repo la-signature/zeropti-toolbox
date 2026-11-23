@@ -4,7 +4,7 @@
 
   
   "ToBeTranslated": "Cần được dịch",
-  "OpenShellAtlasPreset": "Cấu hình Open Shell AtlasOS",
+  "OpenShellAtlasPreset": "Cấu hình Open Shell Zeropti OS",
   "InterfaceTweaksDocumentation": "Tài liệu tinh chỉnh giao diện",
   "ActivationPage": "Trang Kích hoạt",
   "ColorsPage": "Cài đặt cá nhân hóa màu sắc",
@@ -41,7 +41,7 @@
   "FixErrorsDescription": "Sửa lỗi 2502 và 2503",
   "RepairWinComponent": "Sửa chữa các thành phần Windows",
   "TelemetryComponents": "Các thành phần Từ xa (Telemetry)",
-  "AtlasDefault": "Đặt lại Mạng về Mặc định của Atlas",
+  "AtlasDefault": "Đặt lại Mạng về Mặc định của Zeropti OS",
   "WindowsDefault": "Đặt lại Mạng về Mặc định của Windows",
   "BootConfigAppearance": "Giao diện khởi động",
   "BootConfigAppearanceDescription": "Các thiết lập liên quan đến giao diện khởi động Windows",
@@ -269,7 +269,7 @@
   "Home_ProfilesText": "Cấu hình",
   "Home_Favorites": "Yêu thích",
   "NewProfilesButton": "Tạo một cấu hình mới",
-  "IncompatibleVer": "Bản cài đặt AtlasOS/Windows hiện tại không tương thích với phiên bản Toolbox này. Vui lòng nâng cấp lên AtlasOS ",
+  "IncompatibleVer": "Bản cài đặt Zeropti OS/Windows hiện tại không tương thích với phiên bản Toolbox này. Vui lòng nâng cấp lên Zeropti OS ",
   "StatingServices": "Đang khởi động các dịch vụ...",
 
  // Dialog text (// Văn bản hộp thoại)
@@ -294,7 +294,7 @@
   "About": "Giới thiệu",
   "CloneRepoCard": "Sao chép (clone) kho lưu trữ này",
   "BugReportCard": "Tạo báo cáo lỗi",
-  "WarningHeader": "Mã này được cung cấp bởi đội ngũ AtlasOS. Phần mềm này CHỈ nhằm mục đích sử dụng với AtlasOS trên các phiên bản Windows được hỗ trợ. Bất kỳ playbook nào khác và/hoặc phiên bản Windows không được hỗ trợ đều không được khuyến khích.",
+  "WarningHeader": "Mã này được cung cấp bởi đội ngũ AtlasOS. Phần mềm này CHỈ nhằm mục đích sử dụng với Zeropti OS trên các phiên bản Windows được hỗ trợ. Bất kỳ playbook nào khác và/hoặc phiên bản Windows không được hỗ trợ đều không được khuyến khích.",
   "InstallSoftware": "Cài đặt Phần mềm",
   "InstallButton": "Cài đặt",
   "Unstable": "Không ổn định",
@@ -334,12 +334,12 @@
   "Tile_DiscordTitle": "Discord",
   "Tile_DiscordDescription": "Yêu cầu hỗ trợ và kết bạn!",
   "Tile_GithubTitle": "GitHub",
-  "Tile_GithubDescription": "Khám phá mã nguồn AtlasOS và đóng góp",
+  "Tile_GithubDescription": "Khám phá mã nguồn Zeropti OS và đóng góp",
   "Tile_KofiTitle": "Ủng hộ chúng tôi trên Ko-Fi",
   "Tile_KofiDescription": "Giúp chúng tôi tiếp tục duy trì dự án này!",
 
    // Menu Items & other navigation item texts (// Mục Menu & các mục điều hướng khác)
-  "SearchPlaceholder": "Tìm kiếm cài đặt AtlasOS...",
+  "SearchPlaceholder": "Tìm kiếm cài đặt Zeropti OS...",
 
   "Home": "Trang chủ",
   "Software": "Phần mềm",

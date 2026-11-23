@@ -3,7 +3,7 @@
   "LangKey": "fr_fr",
 
   "ToBeTranslated": "À traduire",
-  "OpenShellAtlasPreset": "Profile AtlasOS Open Shell",
+  "OpenShellAtlasPreset": "Profile Zeropti OS Open Shell",
   "InterfaceTweaksDocumentation": "Documentation des réglages d'interface",
   "ActivationPage": "Page d'activation",
   "ColorsPage": "Personnalisation des couleurs",
@@ -40,7 +40,7 @@
   "FixErrorsDescription": "Réparer les erreurs 2502 et 2503",
   "RepairWinComponent": "Réparer les composants Windows",
   "TelemetryComponents": "Composants de télémétrie",
-  "AtlasDefault": "Réinitialiser le réseau aux paramètres par défaut d'Atlas",
+  "AtlasDefault": "Réinitialiser le réseau aux paramètres par défaut de Zeropti OS",
   "WindowsDefault": "Réinitialiser les paramètres par défaut du réseau de Windows",
   "BootConfigAppearance": "Apparence au démarrage",
   "BootConfigAppearanceDescription": "Tout ce qui concerne l'apparence du boot de Windows",
@@ -268,7 +268,7 @@
   "Home_ProfilesText": "Profiles",
   "Home_Favorites": "Favoris",
   "NewProfilesButton": "Créer un nouveau profil",
-  "IncompatibleVer": "L'installation actuelle d'AtlasOS/Windows est incompatible avec cette version du Toolbox. Veuillez mettre à jour votre version d'AtlasOS !",
+  "IncompatibleVer": "L'installation actuelle de Zeropti OS/Windows est incompatible avec cette version du Toolbox. Veuillez mettre à jour votre version de Zeropti OS !",
   "StatingServices": "Démarrage des services...",
 
   // Dialog text
@@ -293,7 +293,7 @@
   "About": "À propos",
   "CloneRepoCard": "Cloner le repo",
   "BugReportCard": "Créer un rapport de bug",
-  "WarningHeader": "Ce code est fourni par l'équipe d'AtlasOS. Ce logiciel est destiné à être utilisé avec AtlasOS sur une version de Windows supportée SEULEMENT! Tout autre Playbook et/ou version de Windows non pris en charge n'est pas recommandé.",
+  "WarningHeader": "Ce code est basé sur le travail de l'équipe d'AtlasOS et modifié par Zeropti. Ce logiciel est destiné à être utilisé avec Zeropti OS sur une version de Windows supportée SEULEMENT ! Tout autre Playbook et/ou version de Windows non pris en charge n'est pas recommandé.",
   "InstallSoftware": "Logiciels",
   "InstallButton": "Installer",
   "Unstable": "Instable",
@@ -309,7 +309,7 @@
   "RelogApply": "Appliquer les changements",
   "ReloadApplyDesc": "Pour appliquer ces changements, veuillez vous reconnecter",
   "RelogBtn": "Déconnecter",
-  "CheckUpdates": "Vérifiez si AtlasOS Toolbox est à jour",
+  "CheckUpdates": "Vérifiez si Zeropti Toolbox est à jour",
   "CheckUpdatesBtn": "Vérifier maintenant",
   "LatestVer": "Vous êtes sur la dernière version disponible !",
   "NewUpdate": "Mettre à jour",
@@ -333,7 +333,7 @@
   "Tile_DiscordTitle": "Discord",
   "Tile_DiscordDescription": "Demandez de l’assistance et faites-vous des amis !",
   "Tile_GithubTitle": "GitHub",
-  "Tile_GithubDescription": "Explorez le code d'AtlasOS et contribuez",
+  "Tile_GithubDescription": "Explorez le code de Zeropti OS et contribuez",
   "Tile_KofiTitle": "Soutenez-nous sur Ko-Fi",
   "Tile_KofiDescription": "Aidez-nous à continuer ce projet !",
 
